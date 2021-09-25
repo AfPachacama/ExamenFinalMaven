@@ -5,7 +5,7 @@ import java.util.List;
 //import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main  {
+public class Main extends Autos {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -20,24 +20,21 @@ public class Main  {
 //		MiArrayList.add(TextoDesdeTeclado);
 //
 
-		Integer numero1=1;
-		Integer numero2=4;
-		Integer numero3=8;
-		Integer numero4=20;
+//		Integer numero1=1;
+//		Integer numero2=4;
+//		Integer numero3=8;
+//		Integer numero4=20;
+//
+//		List<Integer> listaNueva = new ArrayList<Integer>();
+//        listaNueva.add(numero1);
+//        listaNueva.add(numero2);
+//        listaNueva.add(numero3);
+//        listaNueva.add(numero4);	
+		Autos aut1 = new Autos();
+		aut1.setMarca(null);
+		aut1.setModelo(null);
+		aut1.setPlaca(null);
 
-
-
-		
-		
-		
-		
-		// TODO Auto-generated method stub
-		List<Integer> listaNueva = new ArrayList<Integer>();
-        listaNueva.add(numero1);
-        listaNueva.add(numero2);
-        listaNueva.add(numero3);
-        listaNueva.add(numero4);	
-		
 		
 		
 		while(true) {
@@ -63,7 +60,7 @@ public class Main  {
 						switch (opcion) {
 						case 1:
 							System.out.println("Ingrese Marca");
-							 marca = teclado.nextInt();
+//							  = teclado.nextInt();
 						     
 							break;
 						case 2:

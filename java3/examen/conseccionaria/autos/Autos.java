@@ -1,6 +1,6 @@
 package examen.conseccionaria.autos;
 
-public class Autos extends Main{
+public class Autos {
 	private String marca;
 	private String modelo;
 	private int añoFabricacion;
