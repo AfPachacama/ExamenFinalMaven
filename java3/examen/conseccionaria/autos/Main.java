@@ -1,19 +1,46 @@
 package examen.conseccionaria.autos;
 
+import java.util.ArrayList;
+import java.util.List;
+//import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Main  {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int opcion = 0;
+		int claveleida;
+		int clave = 123;
+		
 		Scanner lector = new Scanner(System.in);
+//		String TextoDesdeTeclado = lector.next();
+//		 
+//		ArrayList<String> MiArrayList = new ArrayList<String>();
+//		MiArrayList.add(TextoDesdeTeclado);
+//
 
-		System.out.print("Ingrese la clave: ");
-		claveleida = Integer.parseInt(lector.next());
-		if (clave == claveleida) {
+		Integer numero1=1;
+		Integer numero2=4;
+		Integer numero3=8;
+		Integer numero4=20;
 
-			do {
+
+
+		
+		
+		
+		
+		// TODO Auto-generated method stub
+		List<Integer> listaNueva = new ArrayList<Integer>();
+        listaNueva.add(numero1);
+        listaNueva.add(numero2);
+        listaNueva.add(numero3);
+        listaNueva.add(numero4);	
+		
+		
+		
+		while(true) {
 				System.out.println("***************************************");
 				System.out.println("******** Conseccionaria Ambacar ********");
 				System.out.println("     Elija las siguientes opciones    ");
@@ -29,6 +56,24 @@ public class Main {
 				switch (opcion) {
 
 				case 1:
+					do {
+						System.out.println("1.Auto Importado");
+						System.out.println("2.Auto Nacional");
+						opcion = lector.nextInt();
+						switch (opcion) {
+						case 1:
+							System.out.println("Ingrese Marca");
+							 marca = teclado.nextInt();
+						     
+							break;
+						case 2:
+							System.out.println("Ingrese Marca");
+							break;
+						
+						}
+						
+					} while (opcion != 0);
+					System.out.println("Gracias por preferirnos");
 					
 					
 					break;
@@ -47,17 +92,13 @@ public class Main {
 					break;
 
 				}
-				System.out.println("Para salir digite 0");
-				opcion = lector.nextInt();
-			} while (opcion != 0);
-			System.out.println("Gracias por preferirnos");
-		} else {
-			System.out.println(" La Clave es incorrecta");
+
 		}
-
+	}
 	}
 
 
-	}
 
-}
+	
+
+
